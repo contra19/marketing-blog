@@ -1,0 +1,155 @@
+/* Page Color Variables */
+:root {
+    /* Light Mode */
+    --lm-light: #DAA520;
+    --lm-dark: #000080;
+    --lm-bg-light: #C0C0C0;
+    
+    /* Dark Mode */
+    --dm-x-dark: #2D3250;
+    --dm-dark: #424769;
+    --dm-x-light: #F6B17A;
+    --dm-light: #7077A1;
+}
+
+/* Light Mode Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--lm-bg-light);
+    font-family: Helvetica, Arial, Georgia, Tahoma;
+}
+
+h1 {
+    text-align: center;
+    color:var(--lm-dark);
+}
+
+.header {
+    background-color:var(--lm-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--lm-dark);
+    margin-left: 5px;
+}
+
+.logo-text {
+    color: var(--lm-light);
+    text-align: center;
+}
+
+.title {    
+    margin: 0;
+    font-size: 36px;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--lm-dark);
+}
+
+.navbar {
+    margin-left: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    font-size: 20px;    
+}
+
+.navbar ul {    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: var(--lm-bg-light);
+    text-decoration: none;    
+}
+
+.button {
+    font-size: 20px;
+    color: var(--lm-light);
+    background-color: var(--lm-dark);
+    border-radius: 25px; 
+    cursor: pointer;   
+}
+
+.button:hover {
+    color: var(--dark);
+    background-color: var(--lm-bg-light);
+}
+
+.footer {
+    background-color: var(--lm-light);
+    color: var(--lm-dark);
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: var(--dm-x-dark);
+}
+
+.dark-mode h1 {
+    color: var(--dm-light);
+}
+
+.dark-mode header {
+    background-color: var(--dm-dark);
+}
+
+.dark-mode .logo {
+    background-color: var(--dm-light);
+}
+
+.dark-mode .logo-text {
+    color: var(--dm-dark);
+}
+
+.dark-mode .title {    
+    color: var(--dm-light);
+}
+
+.dark-mode .button {
+    color: var(--dm-dark);
+    background-color: var(--dm-light);
+    border-color: var(--dm-x-light);
+}
+
+.dark-mode .button:hover {
+    color: var(--dm-x-dark);
+    background-color: var(--dm-x-light);
+    border-color: var(--dm-x-dark);
+}
+
+.dark-mode .footer {
+    background-color: var(--dm-dark);
+    color: var(--dm-light);
+}
+
+.dark-mode .footer-link {
+    color: var(--dm-x-light);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <title>Marketing Blog</title>
+</head>
+<body>
+    <!-- Header code goes here -->
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo-text">MB</h1>
+       </div>
+        <h1 class="title">My Marketing Blog</h1>
+        <nav class="navbar">
+            <ul>
+                <li><button class="button" id="blogBtn" name="blogBtn">Blogs</button></li>                 
+                <li><button class="button" id="lightDarkBtn">Dark Mode</button></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form code goes here -->
+    <div class="form-area">
+    <h1>Tell Us Your Marketing Thoughts!</h1>
+    <form class="form" action="/blog.html" method="post" name="blog-form">
+        <ul>
+            <li>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" />
+            </li>
+            <li>
+              <label for="blog-title">Title:</label>
+              <input type="text" id="blog-title" name="blog-title"/>
+            </li>
+            <li>
+              <label for="blog-content">Content:</label>
+              <textarea id="blog-content" name="blog-content"></textarea>
+            </li>
+            <li>
+                <button type="submit" id="submitBtn" name="submitBtn">Submit Blog</button>
+            </li>
+          </ul>
+    </form>
+    </div>
+
+    <!-- Footer code goes here -->
+    <footer class="footer">
+        <p>Designed by Rob Wisniewski. Check out my <a href="https://contra19.github.io/portfolio-project/" class="footer-link">portfolio</a> for more projects and contact information.</p>
+        <script src="./assets/js/logic.js"></script>
+        <script src="./assets/js/form.js"></script>
+    </footer>
+</body>
+</html>
